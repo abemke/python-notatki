@@ -1,0 +1,251 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8981,        242]
+NotebookOptionsPosition[      8008,        210]
+NotebookOutlinePosition[      8353,        225]
+CellTagsIndexPosition[      8310,        222]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Clear", " ", "[", "x", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"w", "=", 
+   RowBox[{
+    RowBox[{"2", "*", 
+     RowBox[{"x", "^", "4"}]}], "+", 
+    RowBox[{"4", "*", 
+     RowBox[{"x", "^", "3"}]}], "+", "x", "+", "7"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"w", "/.", 
+   RowBox[{"x", "\[Rule]", "3"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"w", "/.", 
+   RowBox[{"x", "->", "0"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Plot", "[", 
+   RowBox[{"w", ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "2"}], ",", "2"}], "}"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"u", "=", 
+   RowBox[{
+    RowBox[{"3", "*", 
+     RowBox[{"x", "^", "2"}]}], "-", "x", "-", "3"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"suma", "=", 
+   RowBox[{"w", "+", "u"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"iloczyn", "=", 
+   RowBox[{"w", "*", "u"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"pierw", "=", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{"w", "\[Equal]", "0"}], ",", "x"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"pierw", "=", 
+  RowBox[{"FindRoot", "[", 
+   RowBox[{
+    RowBox[{"w", "\[Equal]", "0"}], ",", 
+    RowBox[{"{", "x", "}"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"pieru", "=", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{"u", "==", "0"}], ",", "x"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"iloraz", "=", 
+  RowBox[{"Quotient", "[", 
+   RowBox[{"w", ",", "u"}], 
+   "]"}]}], "\[IndentingNewLine]", "reszta"}], "Input",
+ CellChangeTimes->{{3.6721463074362607`*^9, 3.672146316125476*^9}, {
+   3.6721464492873096`*^9, 3.6721465787987375`*^9}, {3.6721467261421957`*^9, 
+   3.6721467264073963`*^9}, {3.6721469795334415`*^9, 
+   3.6721470207643137`*^9}, {3.672147106455264*^9, 3.6721472836871758`*^9}, {
+   3.672147345588084*^9, 3.672147400656181*^9}, {3.6721474393754487`*^9, 
+   3.672147498374752*^9}, {3.6721475619448643`*^9, 3.672147579635295*^9}, {
+   3.672147617278161*^9, 3.6721476331277895`*^9}, {3.6721476756066637`*^9, 
+   3.672147688944687*^9}, {3.6721477609700136`*^9, 3.672147773356436*^9}, {
+   3.672147834508543*^9, 3.672147975767991*^9}, {3.6721480134888573`*^9, 
+   3.6721480245804768`*^9}, {3.6721486687836084`*^9, 
+   3.6721486718256135`*^9}, {3.6721487280169125`*^9, 
+   3.6721487526025553`*^9}, {3.67214878366221*^9, 3.6721487978894353`*^9}, {
+   3.672148842396313*^9, 3.6721489142188396`*^9}, {3.672148959365319*^9, 
+   3.6721490179434214`*^9}, {3.6721490553834877`*^9, 3.6721490936347547`*^9}, 
+   3.6721491327440233`*^9, {3.67214921046336*^9, 3.6721492662802577`*^9}, {
+   3.6721493561364155`*^9, 3.6721494112981124`*^9}, {3.672149489220249*^9, 
+   3.672149528235918*^9}, {3.67214956381958*^9, 3.6721495855972185`*^9}, {
+   3.6721496321321*^9, 3.672149695593012*^9}, {3.6721498375952625`*^9, 
+   3.6721499457190523`*^9}, 3.6721499846879206`*^9, {3.672195915353286*^9, 
+   3.672195931327714*^9}, 3.672195966833376*^9, {3.6721959973158293`*^9, 
+   3.6721960377667007`*^9}, {3.672196131398065*^9, 3.67219620248739*^9}, {
+   3.672196295915954*^9, 3.6721963528560543`*^9}, {3.6721967098626814`*^9, 
+   3.6721967216719017`*^9}, {3.67219680048324*^9, 3.6721968073940525`*^9}, {
+   3.6721970579928927`*^9, 3.6721971199250016`*^9}, {3.6721973492142043`*^9, 
+   3.672197356624217*^9}, 3.672197412144715*^9, {3.6721975844314175`*^9, 
+   3.6721975856950197`*^9}, {3.6721976944740105`*^9, 
+   3.6721978715967216`*^9}, {3.6721980582198496`*^9, 
+   3.6721980967207174`*^9}, {3.6721981853912725`*^9, 
+   3.6721982912686586`*^9}, {3.672198357927576*^9, 3.6721983707195983`*^9}, {
+   3.6721984449445286`*^9, 3.672198692594964*^9}, {3.672198900246928*^9, 
+   3.672198977045863*^9}, {3.6721991598469844`*^9, 3.672199185228229*^9}, {
+   3.6721992838672023`*^9, 3.6721993034140368`*^9}, {3.672199476886341*^9, 
+   3.672199507711995*^9}, {3.6721995408932533`*^9, 3.672199639797427*^9}, {
+   3.672199693601922*^9, 3.672200019112094*^9}, {3.6722000509049497`*^9, 
+   3.6722000916210213`*^9}, {3.6722002502576995`*^9, 3.6722002621917205`*^9}, 
+   3.672200292939375*^9, {3.6722005149277644`*^9, 3.6722005302001915`*^9}, {
+   3.672200572928666*^9, 3.6722006196663485`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"FindRoot", "::", "srect"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Value \[NoBreak]\\!\\(x\\)\[NoBreak] in search \
+specification \[NoBreak]\\!\\({x}\\)\[NoBreak] is not a number or array of \
+numbers. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\
+\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/FindRoot\\\", ButtonNote -> \
+\\\"FindRoot::srect\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.672200531666594*^9, {3.6722005787006764`*^9, 3.672200591087098*^9}, 
+   3.6722006214135513`*^9}],
+
+Cell[BoxData[
+ RowBox[{"FindRoot", "[", 
+  RowBox[{
+   RowBox[{"w", "\[Equal]", "0"}], ",", 
+   RowBox[{"{", "x", "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.6722005787006764`*^9, 3.672200591087098*^9}, 
+   3.6722006214135513`*^9}],
+
+Cell[BoxData[
+ RowBox[{"Quotient", "[", 
+  RowBox[{
+   RowBox[{"7", "+", "x", "+", 
+    RowBox[{"4", " ", 
+     SuperscriptBox["x", "3"]}], "+", 
+    RowBox[{"2", " ", 
+     SuperscriptBox["x", "4"]}]}], ",", 
+   RowBox[{
+    RowBox[{"-", "3"}], "-", "x", "+", 
+    RowBox[{"3", " ", 
+     SuperscriptBox["x", "2"]}]}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.6722005787006764`*^9, 3.672200591087098*^9}, 
+   3.6722006214291515`*^9}],
+
+Cell[BoxData["reszta"], "Output",
+ CellChangeTimes->{{3.6722005787006764`*^9, 3.672200591087098*^9}, 
+   3.6722006214291515`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindRoot", "[", 
+  RowBox[{"w", ",", 
+   RowBox[{"{", "x", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.672200555628236*^9, 3.672200566595055*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"FindRoot", "::", "srect"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Value \[NoBreak]\\!\\(x\\)\[NoBreak] in search \
+specification \[NoBreak]\\!\\({x}\\)\[NoBreak] is not a number or array of \
+numbers. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\
+\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/FindRoot\\\", ButtonNote -> \
+\\\"FindRoot::srect\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.6722005571258383`*^9, 3.672200567593457*^9}}],
+
+Cell[BoxData[
+ RowBox[{"FindRoot", "[", 
+  RowBox[{"w", ",", 
+   RowBox[{"{", "x", "}"}]}], "]"}]], "Output",
+ CellChangeTimes->{{3.672200531666594*^9, 3.672200567609057*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6722003735915165`*^9, 3.672200387803141*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6722003891291437`*^9, 3.6722003891291437`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6721997391852016`*^9, 3.672199739200802*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.672199737297599*^9, 3.672199737313199*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.672199653712652*^9, 3.672199653728252*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6721996518250484`*^9, 3.6721996518406487`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6721995639812946`*^9, 3.6721995639968944`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.672199649765845*^9, 3.672199649781445*^9}}]
+},
+WindowSize->{707, 505},
+WindowMargins->{{Automatic, 18}, {Automatic, 25}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (February 23, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 4320, 93, 272, "Input"],
+Cell[4902, 117, 583, 12, 21, "Message"],
+Cell[5488, 131, 236, 6, 30, "Output"],
+Cell[5727, 139, 435, 13, 33, "Output"],
+Cell[6165, 154, 129, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6331, 161, 174, 4, 31, InheritFromParent],
+Cell[6508, 167, 530, 10, 21, "Message"],
+Cell[7041, 179, 175, 4, 30, "Output"]
+}, Open  ]],
+Cell[7231, 186, 94, 1, 31, InheritFromParent],
+Cell[7328, 189, 96, 1, 31, InheritFromParent],
+Cell[7427, 192, 94, 1, 31, InheritFromParent],
+Cell[7524, 195, 92, 1, 31, InheritFromParent],
+Cell[7619, 198, 92, 1, 31, InheritFromParent],
+Cell[7714, 201, 96, 1, 31, InheritFromParent],
+Cell[7813, 204, 96, 1, 31, InheritFromParent],
+Cell[7912, 207, 92, 1, 31, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)
